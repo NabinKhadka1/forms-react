@@ -1,0 +1,54 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10;
+}
+.modal {
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    width: 20%;
+    /* height: 35%; */
+    background-color: rgb(203, 217, 229);
+    border-radius: 10px;
+    z-index: 100;
+}
+.modal__header {
+    background-color: rgb(164, 16, 223);
+    padding: 10px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.modal__body {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.modal__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modal__footer > button {
+    background: rgb(40, 13, 66);
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.modal__footer > button:hover {
+    background-color: rgb(62, 27, 95);
+}
