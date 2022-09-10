@@ -1,5 +1,5 @@
 import "./User.css";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import Modal from "../UI/Modal";
 
 const User = (props) => {
@@ -45,15 +45,15 @@ const User = (props) => {
         error: {
           state: true,
           title: "Enter Valid Username",
-          message: "Something went wrong entering age value",
+          message: "Something went wrong entering Username",
         },
       });
     }
   }
 
   return (
-    <div>
-      {user.error.state && (
+    <Fragment>
+      {user.error.state && ( 
         <Modal
           title={user.error.title}
           message={user.error.message}
@@ -87,7 +87,7 @@ const User = (props) => {
           </div>
         </form>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
